@@ -1,0 +1,92 @@
+TODO:
+	figure how to maximize the score
+	implement kill the fucking wumpus
+	
+	add to the inference: check a flaged room by checking if all of that surounding rooms are safe
+
+the map is fixed at 10 X 10 (boarder is not included)
+	room (1,1) will be the bottom left corner
+	room (10,10) will be the top right one
+
+agents will always facing to the right
+
+there is at least 1 wumpus
+The agent has time to visit K room
+
+Score:
+	Add 100 points for picking up gold
+	Reduce 1000 points for shooting the arrow
+	Reduce 10000 points for dying
+	NO bonus point to kill the wumpus
+
+OUTPUT:
+	percepts at every room the agents enters
+	the content of or change in the knowledge base after EACH NEW percept
+	and the action decided upon the agent
+
+	the score should be output as well
+
+
+Objects:
+	AGENT: the main character, will try to maximize it's score
+	WUMPUS: static, will kill the agent if they are in the same room
+		the agent can kill wumpus by shooting the arrow in the correct direction 
+		surounding the wumpus is it's stench
+	PIT: static, will kill the agent if they are in the same room
+		the surounding the pit is the breeze 
+	GOLD: no signal at all
+
+
+
+GAME LOGIC:
+wumpus and pit can't be in the same room
+	because the pit will kill the wumpus
+the game shouldn't contains any wall (only for the boarder)
+	--> remove the wall moving algorithm
+
+the agent has it's own map, it remember everything that it has done
+when perceive a position
+	it will check the signal/smell/feeling
+	mark the area with a signature for that particular type
+		P1, W1, W2, ...
+	so when it sure where the pit/wumpus is, it mark the position and every signature of that Pit/Wumpus will be removed
+	
+HOW TO INFER IF A POSITION HAS A PIT/WUMPUS
+	we need to visit 3 rooms around that room to 100% sure that if there is a wumpus/pit or not
+	for a wumpus, we can play a guesing game by shooting the arrow/ the game will tell us if we kill the wumpus/ then we can mark that room is safe for visit
+	
+	sometime we need to play a 50/50 game(last resort)
+
+GAME FLOW:
+	when visit a room:
+		if the room has no signal
+			mark_every_room_around(safe)
+		else if the room has a signal
+			mark_every_room_around(possible_pit/possible_wumpus)
+				it should not overwrite the room that has been marked as safe
+		if the room has gold
+			get it
+
+		Calculating for the next move
+			prioritize to visit a safe room that we haven't visit it yet
+			if agent has visited all the surounding room
+				find the room which agent has marked as safe but hasn't visited it yet
+
+Inference
+	when visit a room that has a signal
+		if we know that 3/4 surounding that room is safe
+			-> the last one is the pit/wumpus
+			-> mark it
+
+		or we suspect a room has wumpus or pit
+			if all the surrounding room is safe
+			-> the room has wumpus/pit
+
+	
+
+
+
+			
+
+	
+	

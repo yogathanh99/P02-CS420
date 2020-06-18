@@ -1,0 +1,274 @@
+pygame 1.9.6
+Hello from the pygame community. https://www.pygame.org/contribute.html
+
+
+score: 0
+Agent's location: [1, 8]
+****
+
+
+score: 0
+Agent's location: [1, 9]
+****
+
+
+score: 0
+Agent's location: [2, 9]
+****
+
+
+score: 0
+Agent's location: [2, 8]
+****
+
+
+score: 0
+Agent's location: [2, 7]
+****
+
+
+score: 0
+Agent's location: [1, 7]
+****
+
+
+score: 0
+Agent's location: [1, 6]
+****
+
+
+score: 0
+Agent's location: [1, 5]
+****
+
+
+score: 0
+Agent's location: [2, 5]
+****
+
+
+score: 0
+Agent's location: [2, 6]
+****
+
+
+score: 0
+Agent's location: [3, 6]
+****
+
+
+score: 0
+Agent's location: [4, 6]
+****
+
+
+score: 0
+Agent's location: [4, 5]
+****
+
+
+score: 0
+Agent's location: [4, 4]
+Stench
+****
+
+
+score: 0
+Agent's location: [4, 5]
+****
+
+
+score: 0
+Agent's location: [3, 5]
+****
+
+
+score: 100
+Agent's location: [3, 4]
+****
+
+
+score: 100
+Agent's location: [2, 4]
+Cold
+There is a pit at [2, 3]
+****
+
+
+score: 100
+Agent's location: [1, 4]
+****
+
+
+score: 100
+Agent's location: [1, 3]
+Cold
+****
+
+
+score: 100
+Agent's location: [1, 4]
+****
+Generating a goal: [4, 7]
+['right', 'down']
+[[2, 4], [1, 5]]
+
+
+score: 100
+Agent's location: [2, 4]
+Cold
+****
+
+
+score: 100
+Agent's location: [2, 5]
+****
+Generating a goal: [3, 8]
+['right', 'down']
+[[3, 5], [2, 6]]
+
+
+score: 100
+Agent's location: [2, 6]
+****
+Generating a goal: [3, 9]
+['right', 'down']
+[[3, 6], [2, 7]]
+
+
+score: 100
+Agent's location: [3, 6]
+****
+
+
+score: 100
+Agent's location: [3, 7]
+****
+
+
+score: 100
+Agent's location: [4, 7]
+****
+
+
+score: 100
+Agent's location: [5, 7]
+****
+
+
+score: 100
+Agent's location: [5, 6]
+****
+
+
+score: 100
+Agent's location: [6, 6]
+****
+
+
+score: 100
+Agent's location: [6, 7]
+****
+
+
+score: 100
+Agent's location: [6, 8]
+****
+
+
+score: 100
+Agent's location: [6, 9]
+****
+
+
+score: 100
+Agent's location: [5, 9]
+****
+
+
+score: 100
+Agent's location: [5, 8]
+****
+
+
+score: 100
+Agent's location: [4, 8]
+****
+
+
+score: 100
+Agent's location: [4, 9]
+****
+
+
+score: 100
+Agent's location: [3, 9]
+****
+
+
+score: 100
+Agent's location: [3, 8]
+****
+Generating a goal: [6, 5]
+['right', 'up']
+[[4, 8], [3, 7]]
+
+
+score: 100
+Agent's location: [3, 7]
+****
+Generating a goal: [6, 5]
+['right', 'up']
+[[4, 7], [3, 6]]
+
+
+score: 100
+Agent's location: [4, 7]
+****
+Generating a goal: [7, 9]
+['right', 'down']
+[[5, 7], [4, 8]]
+
+
+score: 100
+Agent's location: [4, 8]
+****
+Generating a goal: [7, 9]
+['right', 'down']
+[[5, 8], [4, 9]]
+
+
+score: 100
+Agent's location: [4, 9]
+****
+Generating a goal: [7, 9]
+['right']
+[[5, 9]]
+
+
+score: 100
+Agent's location: [5, 9]
+****
+Generating a goal: [7, 9]
+['right']
+[[6, 9]]
+
+
+score: 100
+Agent's location: [6, 9]
+****
+
+
+score: 100
+Agent's location: [7, 9]
+****
+
+
+score: 100
+Agent's location: [8, 9]
+****
+
+
+score: 100
+Agent's location: [9, 9]
+****
